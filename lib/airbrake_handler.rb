@@ -47,7 +47,7 @@ class AirbrakeHandler < Chef::Handler
 
   def airbrake_params
     {
-      :notifier_name    => "Chef Airbrake Notifier",
+      :notifier_name    => "Chef Airbrake Notifier - Ilona's check",
       :notifier_version => VERSION,
       :notifier_url     => "https://github.com/morgoth/airbrake_handler",
       :component        => run_status.node.name,
