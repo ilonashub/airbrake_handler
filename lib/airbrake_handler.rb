@@ -57,7 +57,7 @@ class AirbrakeHandler < Chef::Handler
       :params           => {
         :start_time   => run_status.start_time,
         :end_time     => run_status.end_time,
-        :elapsed_time => run_status.elapsed_time,
+        :elapsed_time => "ilona elapsed time",
         :run_list     => run_status.node.run_list.to_s
       }
     }.merge(options)
